@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<div id="sidebar" class="dark-blue-bg">
+  <div class="group" *ngFor="let item of result; let i = index">
+    <a *ngIf="item.submenu.length" (click)="ddToggle(i)" class="light-blue-bg">{{ item.linkText }}</a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<h1>Pagina WEB</h1>
-
-<body>
-
-</body>
-
-</html>
+    <div class="sub-menu" [ngClass]="{ 'show-menu': item.menu }">
+      <ul *ngFor="let menu of result[i].submenu">
+        <li>
+          <a href="{{ menu.link }}" target="_blank">{{ menu.childtext }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-border"></div>
+</div>

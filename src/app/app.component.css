@@ -1,0 +1,60 @@
+#sidebar {
+    width: 10%;
+    height: 100%;
+    font: normal 11pt sans-serif;
+    padding-top: 50px;
+    float: left;
+    background-color: #161a26;
+    
+}
+
+.group {   
+    overflow: hidden;
+}
+
+a {
+    color: white;
+    padding: 7px 0 6px 20px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.sub-menu {
+    transition: max-height 0.2s;
+    max-height: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    background-color: #161a26;
+    font: normal 10pt sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.1pt;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    padding: 7px 0 6px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+a:hover {
+    background-color: #03658c;
+    color: #ffffff;
+}
+
+
+
+
+.show-menu {
+    max-height: 1000px !important;
+}
+
