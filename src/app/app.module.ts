@@ -8,11 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialExampleModule } from 'src/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

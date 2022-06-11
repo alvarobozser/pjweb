@@ -4,8 +4,17 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
-  { path: 'menu', component: MenuComponent }
-];
+  {
+    path: 'home',
+    component: AppComponent,
+  },
+  {
+    path: 'menu',
+    component: MenuComponent,
+  },
+
+]
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,37 @@
+<mat-toolbar class="container">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <img src="../assets/icons/bc.png" width="50px" style="margin-left: 40px;">
+    <h1> Moicho's</h1>
+    <mat-menu class="principal" #menu="matMenu">
+      <button routerLink="/menu" routerLinkActive="active" mat-menu-item>
+        <mat-icon>people</mat-icon>
+        <span>Usuarios</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Configuracion</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Salir</span>
+      </button>
+    </mat-menu>
+  
+  
+    <span class="example-spacer"></span>
+    <button routerLink="/home" routerLinkActive="active" mat-icon-button class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>people</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  
+  
+  </mat-toolbar>
