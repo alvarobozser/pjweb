@@ -2,3 +2,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-menu-panel {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 22px;
+    width: 440px;
+    height: 880px;
+    margin-left: -15px;
+    
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    position: relative;
+    height: inherit;
+    margin-left: 20px;
+   
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content:hover {
+    background: linear-gradient(309deg, rgb(199 191 191)0px, rgba(255, 0, 0, 0) 176px);
+}
+
+

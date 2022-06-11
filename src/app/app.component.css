@@ -1,60 +1,65 @@
-#sidebar {
-    width: 10%;
-    height: 100%;
-    font: normal 11pt sans-serif;
-    padding-top: 50px;
-    float: left;
-    background-color: #161a26;
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.lista {
     
-}
-
-.group {   
-    overflow: hidden;
-}
-
-a {
-    color: white;
-    padding: 7px 0 6px 20px;
-    display: block;
     cursor: pointer;
 }
 
-
-.sub-menu {
-    transition: max-height 0.2s;
-    max-height: 0;
+mat-icon {
+    color: #b52e31;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.mat-menu-item .mat-icon {
+    color: #b52e31;
+
 }
 
-li {
-    list-style-type: none;
-    background-color: #161a26;
-    font: normal 10pt sans-serif;
-    line-height: 19px;
-    letter-spacing: 0.1pt;
+.container {
+    background: white
 }
 
-a {
-    color: rgb(255, 255, 255);
-    padding: 7px 0 6px 20px;
-    text-decoration: none;
+hr {
+    height: 1px;
+    background: #b52e31
+}
+
+.angular {
+    width: 10%;
+    margin-left: 2%;
+}
+
+.submenu {
+    margin-right: 10px;
     cursor: pointer;
-    display: block;
+
 }
 
-a:hover {
-    background-color: #03658c;
-    color: #ffffff;
+.menupr{
+    margin-left: 5px;
 }
 
 
+.mat-menu-item {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.mat-list-item {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
 
-.show-menu {
-    max-height: 1000px !important;
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    position: relative;
+    height: inherit;
+    margin-left: 25px;
 }
 

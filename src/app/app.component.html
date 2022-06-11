@@ -1,14 +1,61 @@
-<div id="sidebar" class="dark-blue-bg">
-  <div class="group" *ngFor="let item of result; let i = index">
-    <a *ngIf="item.submenu.length" (click)="ddToggle(i)" class="light-blue-bg">{{ item.linkText }}</a>
+<mat-toolbar class="container">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <img class="angular" src="https://cdn.worldvectorlogo.com/logos/angular-3.svg">
+  <mat-menu class="principal" #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>people</mat-icon>
+      <span>Usuarios</span>
+    </button>
+    <mat-list class="lista" role="list">
+      <mat-list-item role="listitem">
+        <mat-icon class="submenu">person_search</mat-icon>Perfil
+      </mat-list-item>
+      <mat-list class="lista" role="list">
+        <mat-list-item class="menupr" role="listitem">
+          <mat-icon class="submenu">person_2</mat-icon>Datos
+        </mat-list-item>
+        <mat-list-item class="menupr" role="listitem">
+          <mat-icon class="submenu">lock</mat-icon>Privacidad
+        </mat-list-item>
+        <mat-list-item  class="menupr"role="listitem">
+          <mat-icon class="submenu">credit_card</mat-icon>Metodos de Pago
+        </mat-list-item>
+        <mat-list class="lista" role="list">
+        </mat-list>
+      </mat-list>
+      <mat-list-item role="listitem">
+        <mat-icon class="submenu">airport_shuttle</mat-icon>Viajes
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <mat-icon class="submenu">shopping_cart</mat-icon>Pedidos
+      </mat-list-item>
+    </mat-list>
+    <button mat-menu-item>
+      <mat-icon>view_list</mat-icon>
+      <span>Eventos</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Configuracion</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span>Salir</span>
+    </button>
+  </mat-menu>
 
-    <div class="sub-menu" [ngClass]="{ 'show-menu': item.menu }">
-      <ul *ngFor="let menu of result[i].submenu">
-        <li>
-          <a href="{{ menu.link }}" target="_blank">{{ menu.childtext }}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="right-border"></div>
-</div>
+
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>people</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+
+
+</mat-toolbar>
+<hr>
+<app-menu></app-menu>
