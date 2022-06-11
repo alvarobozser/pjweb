@@ -2,9 +2,11 @@
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
     <mat-icon>menu</mat-icon>
   </button>
-  <img class="angular" src="https://cdn.worldvectorlogo.com/logos/angular-3.svg">
+  
+  <img src="https://i.etsystatic.com/32141303/r/il/a1abbe/3390300768/il_570xN.3390300768_ptii.jpg" width="50px">
+  <h1> Moicho's</h1>
   <mat-menu class="principal" #menu="matMenu">
-    <button mat-menu-item>
+    <button routerLink="/menu" routerLinkActive="active" mat-menu-item>
       <mat-icon>people</mat-icon>
       <span>Usuarios</span>
     </button>
@@ -33,13 +35,10 @@
       </mat-list-item>
     </mat-list>
     <button mat-menu-item>
-      <mat-icon>view_list</mat-icon>
-      <span>Eventos</span>
-    </button>
-    <button mat-menu-item>
       <mat-icon>settings</mat-icon>
       <span>Configuracion</span>
     </button>
+
     <button mat-menu-item>
       <mat-icon>logout</mat-icon>
       <span>Salir</span>
@@ -48,6 +47,9 @@
 
 
   <span class="example-spacer"></span>
+  <button routerLink="/" routerLinkActive="active" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>home</mat-icon>
+  </button>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>people</mat-icon>
   </button>
@@ -58,4 +60,4 @@
 
 </mat-toolbar>
 <hr>
-<app-menu></app-menu>
+<router-outlet></router-outlet>

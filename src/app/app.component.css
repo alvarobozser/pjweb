@@ -8,11 +8,11 @@
 }
 
 mat-icon {
-    color: #b52e31;
+    color: rgb(29, 139, 29);
 }
 
 .mat-menu-item .mat-icon {
-    color: #b52e31;
+    color: rgb(29, 139, 29);
 
 }
 
@@ -22,7 +22,7 @@ mat-icon {
 
 hr {
     height: 1px;
-    background: #b52e31
+    background:  rgb(29, 139, 29);
 }
 
 .angular {
@@ -44,11 +44,13 @@ hr {
 .mat-menu-item {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    color: black
 }
 
 .mat-list-item {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    color: black
    
 }
 
@@ -61,5 +63,12 @@ hr {
     position: relative;
     height: inherit;
     margin-left: 25px;
+}
+h1{
+    
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black,
+    
 }
 

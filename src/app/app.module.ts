@@ -7,6 +7,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialExampleModule } from 'src/material.module';
 import { MenuComponent } from './menu/menu.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MenuComponent } from './menu/menu.component';
     ReactiveFormsModule,
     HttpClientModule,
     MaterialExampleModule,
+    AppRoutingModule,
 
   ],
   providers: [],
